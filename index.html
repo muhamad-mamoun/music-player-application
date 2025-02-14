@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Stream and enjoy your favorite music with our free online music player.">
     <meta name="keywords"
-        content="music player, online music player, free music player, high-quality audio, music streaming, web music player, listen to music, music app">
+        content="music player, online music player, free music player, web music player, listen to music, music app">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./Resources/music-icon.png">
+    <link rel="icon" href="./Assets/logo.png">
     <title>Music Player</title>
 </head>
 
@@ -20,32 +20,36 @@
         Your browser does not support the audio element.
     </audio>
     <main>
-        <section id="section-1">
-            <div id="logo"><img src="./Resources/music-icon.png" alt="Logo" width="50px"></div>
+        <section class="page-section section-1">
+            <div class="nav-bar-section logo"><img src="./Assets/logo.png" alt="Logo" width="50px"></div>
 
-            <div id="nav-icons-container">
-                <div id="nav-icon-1" class="nav-icon">
-                    <img src="./Resources/compass.svg" alt="Explore" width="32px">
+            <div class="nav-bar-section nav-icons-container">
+                <div class="nav-bar-icon nav-explore-icon">
+                    <img src="./Assets/compass.svg" alt="Explore" width="32px">
                     <p>Explore</p>
                 </div>
-                <div id="nav-icon-2" class="nav-icon">
-                    <img src="./Resources/search.svg" alt="Search" width="32px">
+                <div class="nav-bar-icon nav-search-icon">
+                    <img src="./Assets/search.svg" alt="Search" width="32px">
                     <p>Search</p>
                 </div>
-                <div id="nav-icon-3" class="nav-icon">
-                    <img src="./Resources/users.svg" alt="Connect" width="32px">
+                <div class="nav-bar-icon nav-connect-icon">
+                    <img src="./Assets/users.svg" alt="Connect" width="32px">
                     <p>Connect</p>
                 </div>
             </div>
 
-            <div id="profile-image"><img src="./Resources/profile-picture.png" alt="Explore" width="50px"></div>
+            <div class="nav-bar-section profile-image">
+                <a href="https://www.linkedin.com/in/muhamad-mamoun/">
+                    <img src="./Assets/profile-picture.png" alt="Profile Picture" width="50px">
+                </a>
+            </div>
         </section>
-        <section id="section-2">
+        <section class="page-section section-2">
             <!-- 3D icons and decorations -->
             <h1>Your World, Your Soundtrack.</h1>
             <!-- 3D icons and decorations -->
         </section>
-        <section id="section-3">
+        <section class="page-section section-3">
             <div id="playlist-title">
                 <h2>Your Playlist</h2>
             </div>
@@ -72,11 +76,11 @@
                 <div class="playlist-music"></div>
             </div> -->
         </section>
-        <section id="section-4">
+        <section class="page-section section-4">
             <section id="music-images-space">
-                <div id="previous-music-image"><img src="./Resources/previous-img.jpg" loading="lazy"></div>
-                <div id="current-music-image"><img src="./Resources/current-img.jpg" loading="lazy"></div>
-                <div id="next-music-image"><img src="./Resources/next-img.jpg" loading="lazy"></div>
+                <div id="previous-music-image"><img src="./Assets/previous-img.jpg" loading="lazy"></div>
+                <div id="current-music-image"><img src="./Assets/current-img.jpg" loading="lazy"></div>
+                <div id="next-music-image"><img src="./Assets/next-img.jpg" loading="lazy"></div>
             </section>
             <section id="play-progress">
                 <div id="current-time" class="music-time">
@@ -88,22 +92,22 @@
                 </div>
             </section>
         </section>
-        <section id="section-5">
-            <section id="play-control">
-                <div id="favourite" class="play-control-icon"><img src="./Resources/heart.svg"></div>
-                <div id="download" class="play-control-icon"><img src="./Resources/download.svg"></div>
-                <div id="previous" class="play-control-icon"><img src="./Resources/skip-back.svg"></div>
-                <div id="rewind" class="play-control-icon"><img src="./Resources/rewind.svg"></div>
-                <div id="play-pause" class="play-control-icon"><img src="./Resources/pause.svg"></div>
-                <div id="fast-forward" class="play-control-icon"><img src="./Resources/fast-forward.svg"></div>
-                <div id="next" class="play-control-icon"><img src="./Resources/skip-forward.svg"></div>
-                <div id="repeat" class="play-control-icon"><img src="./Resources/repeat.svg"></div>
-                <div id="shuffle" class="play-control-icon"><img src="./Resources/shuffle.svg"></div>
+        <section class="page-section section-5">
+            <section class="play-control-container">
+                <div class="favourite-button play-control-button"><img src="./Assets/favourite.png"></div>
+                <div class="download-button play-control-button"><img src="./Assets/download.png"></div>
+                <div class="previous-button play-control-button"><img src="./Assets/skip-back.png"></div>
+                <div class="rewind-button play-control-button"><img src="./Assets/rewind.png"></div>
+                <div class="play-pause-button play-control-button"><img src="./Assets/pause.svg"></div>
+                <div class="fast-forward-button play-control-button"><img src="./Assets/fast-forward.png"></div>
+                <div class="next-button play-control-button"><img src="./Assets/skip-forward.png"></div>
+                <div class="repeat-button play-control-button"><img src="./Assets/repeat.png"></div>
+                <div class="shuffle-button play-control-button"><img src="./Assets/shuffle.png"></div>
             </section>
-            <section id="volume-control">
-                <div id="low-volume" class="volume-control-icon"><img src="./Resources/volume-1.svg"></div>
+            <section class="volume-control">
+                <div class="low-volume volume-control-button"><img src="./Assets/volume-1.svg"></div>
                 <input id="volume-range" type="range" min="0" max="10" value="8">
-                <div id="hight-volume" class="volume-control-icon"><img src="./Resources/volume-2.svg"></div>
+                <div class="hight-volume volume-control-button"><img src="./Assets/volume-2.svg"></div>
             </section>
         </section>
     </main>
